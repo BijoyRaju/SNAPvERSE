@@ -4,7 +4,7 @@ import 'package:snapverese/service/auth_service.dart';
 import 'package:snapverese/view/bottom_navigation_bar/bottom_navigation_bar.dart';
 import 'package:snapverese/view/register/register_screen.dart';
 import 'package:snapverese/widgets/common.dart';
-import 'package:snapverese/widgets/login_screen.dart';
+import 'package:snapverese/widgets/login_screen_widget.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

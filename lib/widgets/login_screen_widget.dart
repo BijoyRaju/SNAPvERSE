@@ -48,7 +48,7 @@ Widget loginCustomButton(String title, VoidCallback onPressed, String imagePath)
 
 Widget loginButton(String title, VoidCallback onPressed, IconData? icon) {
   return SizedBox(
-    width: double.infinity, // 👈 Full width
+    width: double.infinity,
     child: ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(

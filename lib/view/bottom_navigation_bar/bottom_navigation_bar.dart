@@ -1,10 +1,9 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:snapverese/view/chat/chat_screen.dart';
 import 'package:snapverese/view/explore/explore_screen.dart';
 import 'package:snapverese/view/home/home_screen.dart';
-import 'package:snapverese/view/profile/profile_screen.dart';
+import 'package:snapverese/view/settings/settings_screen.dart';
 
 class BottomNavigationBarScreen extends StatefulWidget {
   const BottomNavigationBarScreen({super.key});
@@ -25,7 +24,7 @@ class _BottomNavigationBarScreenState extends State<BottomNavigationBarScreen> {
       HomeScreen(),
       ExploreScreen(),
       ChatScreen(),
-      ProfileScreen()
+      SettingsScreen()
     ];
 
     return Scaffold(
@@ -38,7 +37,7 @@ class _BottomNavigationBarScreenState extends State<BottomNavigationBarScreen> {
           Icon(Icons.home, size: 33, color: Color(0xFF002B20)),
           Icon(Icons.explore_sharp, size: 33, color: Color(0xFF002B20)),
           Icon(Icons.chat, size: 33, color: Color(0xFF002B20)),
-          Icon(Icons.supervised_user_circle_sharp, size: 33, color: Color(0xFF002B20)),
+          Icon(Icons.settings, size: 33, color: Color(0xFF002B20)),
         ],
         color: Colors.white,
         backgroundColor: Colors.black,

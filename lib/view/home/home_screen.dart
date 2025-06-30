@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:snapverese/view/home/add_post/add_post_dialog.dart';
+import 'package:snapverese/view/home/notification/notification_screen.dart';
 import 'package:snapverese/widgets/common.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -16,9 +18,14 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: customText("SNAPvERSE", 24,fontWeight: FontWeight.w500),
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.add),iconSize: 28),
-          IconButton(onPressed: (){}, icon: Icon(Icons.notifications),iconSize: 28)
+          IconButton(onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => AddPostDialog()));
+          }, icon: Icon(Icons.add),iconSize: 28),
+          IconButton(onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => NotificationScreen()));
+          }, icon: Icon(Icons.notifications),iconSize: 28)
         ],
+        automaticallyImplyLeading: false,
       ),
       body: Column(
         children: [
